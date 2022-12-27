@@ -14,7 +14,6 @@ class TweetsController < ApplicationController
       TweetMailer.notify(@tweet).deliver! # invoke TweetMailer to send out the email when a tweet is successfully posted
       render 'tweets/create'
     end
-    
   end
 
   def destroy
